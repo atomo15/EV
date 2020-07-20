@@ -13,9 +13,12 @@ function loading() {
     var dis_list = "";
     var battery_list = "";
     var table = "";
+    var count = 0;
 
     for (var i = 0; i < car.length; i++) {
+        count += 1
         table = table + "<tr>";
+        table = table + "<td>" + count + "</td>";
         car_list = "<td><b>" + car[i] + "</b>" + "</td>";
         total_list = "<td>" + total[i] + "</td>";
         front_list = "<td>" + front[i] + "</td>";
@@ -37,10 +40,13 @@ function findbalance() {
     var dis_list = "";
     var battery_list = "";
     var table = "";
+    var count = 0;
 
     for (var i = 0; i < car.length; i++) {
         if (parseInt(front[i]) == parseInt(rear[i])) {
+            count += 1
             table = table + "<tr>";
+            table = table + "<td>" + count + "</td>";
             car_list = "<td><b>" + car[i] + "</b>" + "</td>";
             total_list = "<td>" + total[i] + "</td>";
             front_list = "<td>" + front[i] + "</td>";
@@ -53,12 +59,6 @@ function findbalance() {
         }
         // console.log(car[i])
     }
-    // document.getElementById("car").innerHTML = car_list;
-    // document.getElementById("total").innerHTML = total_list;
-    // document.getElementById("front").innerHTML = front_list;
-    // document.getElementById("rear").innerHTML = rear_list;
-    // document.getElementById("dis").innerHTML = dis_list;
-    // document.getElementById("battery").innerHTML = battery_list;
     document.getElementById("table").innerHTML = table;
 }
 
@@ -70,10 +70,13 @@ function findfront() {
     var dis_list = "";
     var battery_list = "";
     var table = "";
+    var count = 0;
 
     for (var i = 0; i < car.length; i++) {
         if (parseInt(front[i]) > parseInt(rear[i])) {
+            count += 1
             table = table + "<tr>";
+            table = table + "<td>" + count + "</td>";
             car_list = "<td><b>" + car[i] + "</b>" + "</td>";
             total_list = "<td>" + total[i] + "</td>";
             front_list = "<td>" + front[i] + "</td>";
@@ -103,10 +106,13 @@ function findrear() {
     var dis_list = "";
     var battery_list = "";
     var table = "";
+    var count = 0;
 
     for (var i = 0; i < car.length; i++) {
         if (parseInt(front[i]) < parseInt(rear[i])) {
+            count += 1
             table = table + "<tr>";
+            table = table + "<td>" + count + "</td>";
             car_list = "<td><b>" + car[i] + "</b>" + "</td>";
             total_list = "<td>" + total[i] + "</td>";
             front_list = "<td>" + front[i] + "</td>";
@@ -119,11 +125,5 @@ function findrear() {
         }
         // console.log(car[i])
     }
-    // document.getElementById("car").innerHTML = car_list;
-    // document.getElementById("total").innerHTML = total_list;
-    // document.getElementById("front").innerHTML = front_list;
-    // document.getElementById("rear").innerHTML = rear_list;
-    // document.getElementById("dis").innerHTML = dis_list;
-    // document.getElementById("battery").innerHTML = battery_list;
     document.getElementById("table").innerHTML = table;
 }
