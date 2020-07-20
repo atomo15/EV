@@ -56,3 +56,30 @@ function findbalance() {
     document.getElementById("dis").innerHTML = dis_list;
     document.getElementById("battery").innerHTML = battery_list;
 }
+
+function findfront() {
+    var car_list = "";
+    var total_list = "";
+    var front_list = "";
+    var rear_list = "";
+    var dis_list = "";
+    var battery_list = "";
+
+    for (var i = 0; i < car.length; i++) {
+        if (front[i] > rear[i]) {
+            car_list = car_list + "<b>" + car[i] + "</b>" + "<br>";
+            total_list = total_list + total[i] + "<br>";
+            front_list = front_list + front[i] + "<br>";
+            rear_list = rear_list + rear[i] + "<br>";
+            dis_list = dis_list + dis[i] + "<br>";
+            battery_list = battery_list + battery[i] + "<br>";
+        }
+        // console.log(car[i])
+    }
+    document.getElementById("car").innerHTML = car_list;
+    document.getElementById("total").innerHTML = total_list;
+    document.getElementById("front").innerHTML = front_list;
+    document.getElementById("rear").innerHTML = rear_list;
+    document.getElementById("dis").innerHTML = dis_list;
+    document.getElementById("battery").innerHTML = battery_list;
+}
