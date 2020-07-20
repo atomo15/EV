@@ -12,22 +12,21 @@ function loading() {
     var rear_list = "";
     var dis_list = "";
     var battery_list = "";
+    var table = "";
 
     for (var i = 0; i < car.length; i++) {
-        car_list = car_list + "<b>" + car[i] + "</b>" + "<br>";
-        total_list = total_list + total[i] + "<br>";
-        front_list = front_list + front[i] + "<br>";
-        rear_list = rear_list + rear[i] + "<br>";
-        dis_list = dis_list + dis[i] + "<br>";
-        battery_list = battery_list + battery[i] + "<br>";
+        table = table + "<tr>";
+        car_list = "<td><b>" + car[i] + "</b>" + "</td>";
+        total_list = "<td>" + total[i] + "</td>";
+        front_list = "<td>" + front[i] + "</td>";
+        rear_list = "<td>" + rear[i] + "</td>";
+        dis_list = "<td>" + dis[i] + "</td>";
+        battery_list = "<td>" + battery[i] + "</td>";
+
+        table = table + car_list + total_list + front_list + rear_list + dis_list + battery_list + "</tr>";
         // console.log(car[i])
     }
-    document.getElementById("car").innerHTML = car_list;
-    document.getElementById("total").innerHTML = total_list;
-    document.getElementById("front").innerHTML = front_list;
-    document.getElementById("rear").innerHTML = rear_list;
-    document.getElementById("dis").innerHTML = dis_list;
-    document.getElementById("battery").innerHTML = battery_list;
+    document.getElementById("table").innerHTML = table;
 }
 
 function findbalance() {
@@ -37,24 +36,30 @@ function findbalance() {
     var rear_list = "";
     var dis_list = "";
     var battery_list = "";
+    var table = "";
 
     for (var i = 0; i < car.length; i++) {
         if (parseInt(front[i]) == parseInt(rear[i])) {
-            car_list = car_list + "<b>" + car[i] + "</b>" + "<br>";
-            total_list = total_list + total[i] + "<br>";
-            front_list = front_list + front[i] + "<br>";
-            rear_list = rear_list + rear[i] + "<br>";
-            dis_list = dis_list + dis[i] + "<br>";
-            battery_list = battery_list + battery[i] + "<br>";
+            table = table + "<tr>";
+            car_list = "<td><b>" + car[i] + "</b>" + "</td>";
+            total_list = "<td>" + total[i] + "</td>";
+            front_list = "<td>" + front[i] + "</td>";
+            rear_list = "<td>" + rear[i] + "</td>";
+            dis_list = "<td>" + dis[i] + "</td>";
+            battery_list = "<td>" + battery[i] + "</td>";
+
+            table = table + car_list + total_list + front_list + rear_list + dis_list + battery_list + "</tr>";
+
         }
         // console.log(car[i])
     }
-    document.getElementById("car").innerHTML = car_list;
-    document.getElementById("total").innerHTML = total_list;
-    document.getElementById("front").innerHTML = front_list;
-    document.getElementById("rear").innerHTML = rear_list;
-    document.getElementById("dis").innerHTML = dis_list;
-    document.getElementById("battery").innerHTML = battery_list;
+    // document.getElementById("car").innerHTML = car_list;
+    // document.getElementById("total").innerHTML = total_list;
+    // document.getElementById("front").innerHTML = front_list;
+    // document.getElementById("rear").innerHTML = rear_list;
+    // document.getElementById("dis").innerHTML = dis_list;
+    // document.getElementById("battery").innerHTML = battery_list;
+    document.getElementById("table").innerHTML = table;
 }
 
 function findfront() {
@@ -64,24 +69,30 @@ function findfront() {
     var rear_list = "";
     var dis_list = "";
     var battery_list = "";
+    var table = "";
 
     for (var i = 0; i < car.length; i++) {
         if (parseInt(front[i]) > parseInt(rear[i])) {
-            car_list = car_list + "<b>" + car[i] + "</b>" + "<br>";
-            total_list = total_list + total[i] + "<br>";
-            front_list = front_list + front[i] + "<br>";
-            rear_list = rear_list + rear[i] + "<br>";
-            dis_list = dis_list + dis[i] + "<br>";
-            battery_list = battery_list + battery[i] + "<br>";
+            table = table + "<tr>";
+            car_list = "<td><b>" + car[i] + "</b>" + "</td>";
+            total_list = "<td>" + total[i] + "</td>";
+            front_list = "<td>" + front[i] + "</td>";
+            rear_list = "<td>" + rear[i] + "</td>";
+            dis_list = "<td>" + dis[i] + "</td>";
+            battery_list = "<td>" + battery[i] + "</td>";
+
+            table = table + car_list + total_list + front_list + rear_list + dis_list + battery_list + "</tr>";
+
+            // console.log(car[i])
         }
-        // console.log(car[i])
+        // document.getElementById("car").innerHTML = car_list;
+        // document.getElementById("total").innerHTML = total_list;
+        // document.getElementById("front").innerHTML = front_list;
+        // document.getElementById("rear").innerHTML = rear_list;
+        // document.getElementById("dis").innerHTML = dis_list;
+        // document.getElementById("battery").innerHTML = battery_list;
+        document.getElementById("table").innerHTML = table;
     }
-    document.getElementById("car").innerHTML = car_list;
-    document.getElementById("total").innerHTML = total_list;
-    document.getElementById("front").innerHTML = front_list;
-    document.getElementById("rear").innerHTML = rear_list;
-    document.getElementById("dis").innerHTML = dis_list;
-    document.getElementById("battery").innerHTML = battery_list;
 }
 
 function findrear() {
@@ -91,22 +102,28 @@ function findrear() {
     var rear_list = "";
     var dis_list = "";
     var battery_list = "";
+    var table = "";
 
     for (var i = 0; i < car.length; i++) {
         if (parseInt(front[i]) < parseInt(rear[i])) {
-            car_list = car_list + "<b>" + car[i] + "</b>" + "<br>";
-            total_list = total_list + total[i] + "<br>";
-            front_list = front_list + front[i] + "<br>";
-            rear_list = rear_list + rear[i] + "<br>";
-            dis_list = dis_list + dis[i] + "<br>";
-            battery_list = battery_list + battery[i] + "<br>";
+            table = table + "<tr>";
+            car_list = "<td><b>" + car[i] + "</b>" + "</td>";
+            total_list = "<td>" + total[i] + "</td>";
+            front_list = "<td>" + front[i] + "</td>";
+            rear_list = "<td>" + rear[i] + "</td>";
+            dis_list = "<td>" + dis[i] + "</td>";
+            battery_list = "<td>" + battery[i] + "</td>";
+
+            table = table + car_list + total_list + front_list + rear_list + dis_list + battery_list + "</tr>";
+
         }
         // console.log(car[i])
     }
-    document.getElementById("car").innerHTML = car_list;
-    document.getElementById("total").innerHTML = total_list;
-    document.getElementById("front").innerHTML = front_list;
-    document.getElementById("rear").innerHTML = rear_list;
-    document.getElementById("dis").innerHTML = dis_list;
-    document.getElementById("battery").innerHTML = battery_list;
+    // document.getElementById("car").innerHTML = car_list;
+    // document.getElementById("total").innerHTML = total_list;
+    // document.getElementById("front").innerHTML = front_list;
+    // document.getElementById("rear").innerHTML = rear_list;
+    // document.getElementById("dis").innerHTML = dis_list;
+    // document.getElementById("battery").innerHTML = battery_list;
+    document.getElementById("table").innerHTML = table;
 }

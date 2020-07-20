@@ -10,15 +10,15 @@
     <br>
     <center><a href="https://atomo15.github.io/EV/EVWeb/web/homepage.html"><button class="myButton"><b><h1>EV's</h1></b></button></a></center>
     <br>
-    <center><b>Data Updated: 20/20/2020</b></center>
+    <center><b>Data Updated: 7/20/2020</b></center>
     <br>
 
     <center>
         <h2><b>Arranged by</b></h2>
         <br>
         <button class="myButton" onclick="findbalance()">Balance</button>
-        <button class="myButton" onclick="findfront()">Front</button>
-        <button class="myButton" onclick="findrear()">Rear</button>
+        <button class="myButton" onclick="findfront()">Front > Rear</button>
+        <button class="myButton" onclick="findrear()">Rear > Front</button>
     </center>
 
     <br>
@@ -44,14 +44,7 @@
                     <h3>Battery</h3>
                 </th>
             </tr>
-            <tr>
-                <td id="car"></td>
-                <td id="total"></td>
-                <td id="front"></td>
-                <td id="rear"></td>
-                <td id="dis"></td>
-                <td id="battery"></td>
-            </tr>
+            <tbody id="table"></tbody>
 
         </table>
     </center>
