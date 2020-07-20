@@ -1,0 +1,30 @@
+Car,Total,Front,Rear,Distribution,Battery
+Audi e-tron 55,2720,1360,1360,50/50,95 kWh
+Mercedes EQC,2620,1240,1380,47/53,~90 kWh
+Audi e-tron 50,2560,1300,1260,51/49,71 kWh
+Tesla Model S Perf Raven,2360,1200,1160,51/49,100 kWh
+Jaguar I-Pace 90 kWh,2340,1240,1100,53/47,90 kWh
+Porsche Taycan 4S 79 kWh,2320,1180,1140,51/49,79 kWh
+Tesla Model 3 Performance,1960,980,980,50/50,~80 kWh
+Model 3 LR RWD,1880,900,980,48/52,~80 kWh
+Kia e-Niro 64 kWh,1860,1020,840,55/45,~70 kWh
+Kia e-Soul 64 kWh,1860,1020,840,55/45,~70 kWh
+Hyundai Kona 64 kWh,1840,1000,840,54/46,~70 kWh
+Nissan Leaf 62 kWh,1820,1020,800,56/44,62 kWh
+Nissan e-NV200 40 kWh,1740,1000,740,57/43,40 kWh
+Model 3 Standard Range+,1740,800,940,46/54,~50 kWh
+Nissan Leaf 40 kWh,1700,960,740,56/44,40 kWh
+VW e-Golf 35.8 kWh,1700,920,780,54/46,36 kWh
+Hyundai Ioniq 38 kWh,1680,840,840,50/50,~42 kWh
+Kia Soul 30 kWh,1680,960,720,57/43,~34 kWh
+Renault Zoe ZE50,1640,960,680,59/41,52 kWh
+MG ZS EV (Thai),1630,940,690,58/42,~50 kWh
+MG ZS EV,1640,960,680,59/41,~50 kWh
+Honda e,1620,820,800,51/49,35.5 kWh
+Hyundai Ioniq 28 kWh,1600,780,820,49/51,~31 kWh
+Peugeot e-208,1600,900,700,56/44,50 kWh
+BMW i3 44 kWh,1440,700,740,49/51,44 kWh
+BMW i3 22 kWh,1360,640,720,47/53,22 kWh
+VW e-Up 36.8 kWh,1280,720,560,56/44,36.8 kWh
+VW e-Up 18.7 kWh,1260,720,540,57/43,18.7 kWh
+Mitsubishi i-MiEV,1200,560,640,47/53,16 kWh

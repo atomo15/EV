@@ -1,0 +1,19 @@
+.credit {
+    /* background-color: aqua; */
+    margin-bottom: 0;
+    border-width: 10px;
+    border: blue;
+    border-radius: 10;
+    height: 35px;
+    /* width: 50%; */
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    -ms-border-radius: 10;
+    -o-border-radius: 10;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
