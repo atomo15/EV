@@ -15,7 +15,16 @@
 table,
 th,
 td {
-    border: 1px solid black;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+b {
+    color: white;
 }
 
 .myButton {
