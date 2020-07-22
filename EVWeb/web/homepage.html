@@ -3,18 +3,55 @@
 <header>
     <title>EV's</title>
     <script src="data.js"></script>
+    <script src="feature.js"></script>
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        b {
+            color: white;
+        }
+        
+        table {
+            border: 1px solid white;
+            padding: 10px;
+            width: 100%;
+        }
+        
+        th,
+        td {
+            border: 1px solid white;
+            padding: 10px;
+        }
+    </style>
 </header>
 
 <body style="background-color: black;" onload="loading()">
-    <br>
-    <center><a href="https://atomo15.github.io/EV/EVWeb/web/homepage.html"><button class="myButton"><b><h1>EV</h1></b></button></a></center>
-    <br>
-    <center><b>Data Updated: 7/20/2020</b></center>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">EV</a>
+        <a href="#news">Car</a>
+        <a href="#contact">Weight</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- <br> -->
+    <!-- <center><a href="https://atomo15.github.io/EV/EVWeb/web/homepage.html"><button class="myButton"><b><h1>EV</h1></b></button></a></center>
+    <br> -->
+
+    <!-- <center style="position: relative;"></center> -->
     <br>
 
-    <center>
-        <h2><b>Weight Arranged by</b></h2>
+    <center style="margin-top: 50px;">
+        <h2><b>Data Updated: 7/20/2020</b></h2>
+        <h2><b>Weight</b></h2>
+        <h2><b>Arranged by</b></h2>
         <br>
         <button class="myButton" onclick="findbalance()">Balance</button>
         <button class="myButton" onclick="findfront()">Front > Rear</button>
@@ -65,7 +102,16 @@
         </table>
     </center>
     <br>
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>
