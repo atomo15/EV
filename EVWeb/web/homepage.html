@@ -31,6 +31,10 @@
 
 <body style="background-color: black;" onload="loading()">
 
+    <center>
+        <h2><b>Weight</b></h2>
+    </center>
+
     <div class="topnav" id="myTopnav">
         <a href="https://atomo15.github.io/EV/EVWeb/web/homepage.html" class="active">EV</a>
         <a href="#news">Car</a>
@@ -39,7 +43,13 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
+        <br>
+
     </div>
+    <a id="extra" href="#news" style="background-color: #3dc21b;margin-top: 60px;position: fixed; padding:10px">
+        <i class="fa fa-search-plus" style="color: white;"></i>
+    </a>
+
 
     <!-- <br> -->
     <!-- <center><a href="https://atomo15.github.io/EV/EVWeb/web/homepage.html"><button class="myButton"><b><h1>EV</h1></b></button></a></center>
@@ -50,16 +60,19 @@
 
     <center style="margin-top: 50px;">
         <h2><b>Data Updated: 7/20/2020</b></h2>
-        <h2><b>Weight</b></h2>
-        <h2><b>Arranged by</b></h2>
+        <!-- <h2><b>Weight</b></h2>
+        <h2><b>Arranged by</b></h2> -->
         <br>
+    </center>
+
+    <div style="position:fixed;padding-left: 10%;padding-right: 10%;height: 100px;">
         <button class="myButton" onclick="findbalance()">Balance</button>
         <button class="myButton" onclick="findfront()">Front > Rear</button>
         <button class="myButton" onclick="findrear()">Rear > Front</button>
-    </center>
+    </div>
 
     <br>
-    <center>
+    <center style="padding-top: 50px;">
         <table>
             <tr>
                 <th>
@@ -105,10 +118,13 @@
     <script>
         function myFunction() {
             var x = document.getElementById("myTopnav");
+            var y = document.getElementById("extra");
             if (x.className === "topnav") {
                 x.className += " responsive";
+                y.className = "extra";
             } else {
                 x.className = "topnav";
+                y.className = "extra2";
             }
         }
     </script>

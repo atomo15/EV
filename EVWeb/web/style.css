@@ -72,6 +72,14 @@
     display: none;
 }
 
+.extra {
+    display: none;
+}
+
+.extra2 {
+    display: block;
+}
+
 @media screen and (max-width: 720px) {
     .topnav a:not(:first-child) {
         display: none;
@@ -89,7 +97,7 @@
 @media screen and (max-width: 720px) {
     .topnav.responsive {
         position: fixed;
-        background-color: aqua;
+        /* background-color: aqua; */
     }
     .topnav.responsive .icon {
         position: absolute;
