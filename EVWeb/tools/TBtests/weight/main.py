@@ -59,10 +59,10 @@ def main():
     dis_js = dis_js + '];';
     battery_js = battery_js + '];';
     
-    #print(car_js)
-    #print(total_js)
-    #print(front_js)
-    #print(rear_js)
-    #print(dis_js)
+    print(car_js)
+    print(total_js)
+    print(front_js)
+    print(rear_js)
+    print(dis_js)
     print(battery_js)
 main()
